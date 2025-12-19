@@ -9,35 +9,35 @@ const galleryItems = [
   {
     id: 1,
     type: 'image',
-    src: '/assets/seva-1.jpeg',
+    src: '/assets/seva-1.jpg',
     alt: 'Food Distribution',
     caption: 'Daily evening meal distribution'
   },
   {
     id: 2,
     type: 'image',
-    src: '/assets/seva-2.jpeg',
+    src: '/assets/seva-2.jpg',
     alt: 'Happy Beneficiaries',
     caption: 'Smiles that motivate us'
   },
   {
     id: 3,
     type: 'image',
-    src: '/assets/seva-3.jpeg',
+    src: '/assets/seva-3.jpg',
     alt: 'Preparation',
     caption: 'Freshly prepared nutritious meals'
   },
   {
     id: 4,
     type: 'image',
-    src: '/assets/seva-4.jpeg',
+    src: '/assets/seva-4.jpg',
     alt: 'Community',
     caption: 'Serving the elderly with respect'
   },
   {
     id: 5,
     type: 'image',
-    src: '/assets/seva-5.jpeg',
+    src: '/assets/seva-5.jpg',
     alt: 'Helping Hand',
     caption: 'Volunteers in action'
   },
