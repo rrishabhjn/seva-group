@@ -81,18 +81,16 @@ export function Contact() {
             <p className="text-stone-600 mb-8">Scan the QR code to contribute instantly.</p>
 
             <div className="bg-stone-100 border-2 border-dashed border-stone-300 rounded-xl aspect-square flex items-center justify-center mb-8 relative group">
-              {/* Placeholder for QR Code */}
               <div className="text-center">
                 <div className="w-48 h-48 bg-white mx-auto mb-4 p-2 shadow-sm rounded-lg">
                     <img 
-                        src="https://picsum.photos/seed/qr/200/200" 
-                        alt="UPI QR Code" 
-                        className="w-full h-full object-contain opacity-50 grayscale group-hover:grayscale-0 transition-all"
+                        src="https://i.ibb.co/k6PLCH71/Preeti-Jain-UPI-QR.png" 
+                        alt="Preeti Jain UPI QR" 
+                        className="w-full h-full object-contain"
                         referrerPolicy="no-referrer"
                     />
                 </div>
-                <p className="text-sm text-stone-500 font-mono">UPI ID: sevagroup@upi</p>
-                <p className="text-xs text-red-500 mt-2">(Placeholder QR)</p>
+                <p className="text-sm text-stone-500 font-mono">UPI ID: preeti-jain@niyoicici</p>
               </div>
             </div>
 
