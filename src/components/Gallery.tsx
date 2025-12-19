@@ -9,56 +9,63 @@ const galleryItems = [
   {
     id: 1,
     type: 'image',
-    src: '/assets/seva-1.jpg',
+    src: 'https://i.ibb.co/nq1Yp0sc/seva-1.jpg',
     alt: 'Food Distribution',
     caption: 'Daily evening meal delivery'
   },
   {
     id: 2,
     type: 'image',
-    src: '/assets/seva-2.jpg',
+    src: 'https://i.ibb.co/ksN7PMhM/seva-2.jpg',
     alt: 'Happy Beneficiaries',
     caption: 'Smiles that motivate us'
   },
   {
     id: 3,
     type: 'image',
-    src: '/assets/seva-3.jpg',
+    src: 'https://i.ibb.co/60HVx4QM/seva-3.jpg',
     alt: 'Preparation',
     caption: 'Freshly prepared nutritious meals'
   },
   {
     id: 4,
     type: 'image',
-    src: '/assets/seva-4.jpg',
+    src: 'https://i.ibb.co/5XwzrpxQ/seva-4.jpg',
     alt: 'Community',
     caption: 'Serving the homebound with respect'
   },
   {
     id: 5,
     type: 'image',
-    src: '/assets/seva-5.jpg',
+    src: 'https://i.ibb.co/kgS5NmpR/seva-5.jpg',
     alt: 'Helping Hand',
     caption: 'Volunteers delivering hope'
   },
   {
     id: 6,
     type: 'video',
-    src: '/assets/seva-6.mp4',
-    alt: 'Distribution Video',
-    caption: 'Live from the distribution center'
+    src: 'https://www.youtube.com/embed/by_VqPTTa6g',
+    alt: 'Seva Group Testimonial - 1',
+    caption: 'Testimonial: Impact on the ground'
   },
   {
     id: 7,
     type: 'video',
-    src: '/assets/seva-7.mp4',
-    alt: 'Community Message',
-    caption: 'A message from our volunteers'
+    src: 'https://www.youtube.com/embed/O1VQ6xaSL4U',
+    alt: 'Seva Group Testimonial - 2',
+    caption: 'Testimonial: A message of gratitude'
   }
 ];
 
 export function Gallery() {
   const [selectedItem, setSelectedItem] = useState<typeof galleryItems[0] | null>(null);
+
+  const isYoutube = (url: string) => url.includes('youtube.com/embed');
+  
+  const getYoutubeThumbnail = (url: string) => {
+    const match = url.match(/\/embed\/([a-zA-Z0-9_-]+)/);
+    return match ? `https://img.youtube.com/vi/${match[1]}/hqdefault.jpg` : '';
+  };
 
   return (
     <div className="bg-white" id="gallery">
@@ -84,12 +91,21 @@ export function Gallery() {
             >
               {item.type === 'video' ? (
                 <div className="relative w-full h-full">
-                  <video
-                    src={item.src}
-                    className="w-full h-full object-cover"
-                    muted
-                    playsInline
-                  />
+                  {isYoutube(item.src) ? (
+                    <img 
+                      src={getYoutubeThumbnail(item.src)} 
+                      alt={item.alt}
+                      className="w-full h-full object-cover"
+                      referrerPolicy="no-referrer"
+                    />
+                  ) : (
+                    <video
+                      src={item.src}
+                      className="w-full h-full object-cover"
+                      muted
+                      playsInline
+                    />
+                  )}
                   <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors">
                     <PlayCircle className="w-12 h-12 text-white opacity-80" />
                   </div>
@@ -128,13 +144,23 @@ export function Gallery() {
                 onClick={(e) => e.stopPropagation()}
               >
                 {selectedItem.type === 'video' ? (
-                  <video
-                    src={selectedItem.src}
-                    className="w-full h-full max-h-[80vh] object-contain mx-auto"
-                    controls
-                    autoPlay
-                    playsInline
-                  />
+                  isYoutube(selectedItem.src) ? (
+                    <iframe
+                      src={selectedItem.src}
+                      title={selectedItem.alt}
+                      className="w-full h-full max-h-[80vh] aspect-video mx-auto"
+                      allow="autoplay; encrypted-media; picture-in-picture"
+                      allowFullScreen
+                    />
+                  ) : (
+                    <video
+                      src={selectedItem.src}
+                      className="w-full h-full max-h-[80vh] object-contain mx-auto"
+                      controls
+                      autoPlay
+                      playsInline
+                    />
+                  )
                 ) : (
                   <img
                     src={selectedItem.src}
