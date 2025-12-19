@@ -1,6 +1,7 @@
 import React from 'react';
 import { Section } from './ui/Section';
 import { MapPin, Phone, Mail, ExternalLink } from 'lucide-react';
+import { WhatsAppIcon } from './ui/WhatsAppIcon';
 import { motion } from 'motion/react';
 
 export function Contact() {
@@ -95,13 +96,31 @@ export function Contact() {
             </div>
 
             <div className="bg-blue-50 p-4 rounded-lg border border-blue-100">
-              <h4 className="font-semibold text-blue-900 mb-1 flex items-center gap-2">
+              <h4 className="font-semibold text-blue-900 mb-3 flex items-center gap-2">
                 International Donors
                 <ExternalLink className="h-4 w-4" />
               </h4>
-              <p className="text-sm text-blue-800">
-                Please contact us via email or WhatsApp for international bank transfer details.
-              </p>
+              <div className="space-y-3">
+                <p className="text-sm text-blue-800 mb-2">
+                  Please contact us for international bank transfer details:
+                </p>
+                <a 
+                  href="mailto:007rishabhjain@gmail.com" 
+                  className="flex items-center gap-2 text-blue-700 hover:text-blue-900 transition-colors font-medium"
+                >
+                  <Mail className="h-4 w-4" />
+                  <span>007rishabhjain@gmail.com</span>
+                </a>
+                <a 
+                  href="http://wa.me/+12245661479" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-blue-700 hover:text-blue-900 transition-colors font-medium"
+                >
+                  <WhatsAppIcon className="h-4 w-4" />
+                  <span>Chat on WhatsApp</span>
+                </a>
+              </div>
             </div>
           </motion.div>
         </div>
