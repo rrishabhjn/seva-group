@@ -16,19 +16,18 @@ export function Mission() {
           >
             <h2 className="text-orange-600 font-semibold tracking-wide uppercase mb-3">Our Mission</h2>
             <h3 className="text-3xl md:text-4xl font-bold text-stone-900 mb-6">
-              Feeding the Hungry, <br />
-              <span className="text-stone-600">With Dignity and Love.</span>
+              Nourishing Those Who <br />
+              <span className="text-stone-600">Cannot Reach Us.</span>
             </h3>
             
             <div className="prose prose-lg text-stone-600 mb-8">
               <p className="mb-4">
-                The Seva Group initiative began in 2020, during the height of the Covid pandemic. 
-                What started as a small effort by <strong>Preeti Jain and her friends</strong> to help those who lost their livelihoods has grown into 
-                a daily commitment to the community of Beawar.
+                The Seva Group initiative began in 2020 by <strong>Preeti Jain and her friends</strong>. 
+                What started as a response to the pandemic revealed a deeper, permanent need in our community.
               </p>
               <p>
-                We focus on the elderly poor and blue-collar workers who often go unnoticed. 
-                Our model is simple but powerful: <strong>Zero Overhead.</strong>
+                We realized that many individuals are <strong>disabled, homebound, or too frail to work</strong>, leaving them without any means to feed themselves. 
+                We don't just distribute food; we deliver it to their doorsteps.
               </p>
             </div>
 
@@ -36,7 +35,7 @@ export function Mission() {
               {[
                 "Local caterers provide food at-cost",
                 "100% of donations go directly to meals",
-                "Daily distribution in Beawar",
+                "Daily doorstep delivery in Beawar",
                 "Community-driven and volunteer-led"
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">

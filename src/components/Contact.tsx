@@ -15,11 +15,9 @@ export function Contact() {
               Help Us Keep the <br /> Kitchen Running.
             </h3>
             <p className="text-stone-300 text-lg mb-10 leading-relaxed">
-              Your contribution directly feeds a hungry stomach. With our zero-overhead model, 
+              Your contribution feeds someone who physically cannot work to feed themselves. With our zero-overhead model, 
               every rupee you donate goes towards purchasing food ingredients.
               <br /><br />
-              Annual cost to run: <span className="text-white font-bold">₹5 Lakhs</span>.
-              <br />
               <span className="text-stone-400 text-base italic">Any amount of donation, however small, will be helpful.</span>
             </p>
 
@@ -74,7 +72,7 @@ export function Contact() {
               <div className="relative z-10">
                 <h4 className="font-bold text-orange-800 text-lg mb-2">Make a Big Impact</h4>
                 <p className="text-orange-700">
-                  A contribution of just <span className="font-bold">₹500 ($6)</span> helps serve one person for <span className="font-bold">20 days</span>.
+                  A contribution of just <span className="font-bold">₹500 ($6)</span> helps serve one person for <span className="font-bold">12 days</span>.
                 </p>
               </div>
             </div>

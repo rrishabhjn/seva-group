@@ -28,12 +28,12 @@ export function Hero() {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
-            Serving Humanity, <br />
+            Bringing Hope Home, <br />
             <span className="text-orange-500">One Meal at a Time.</span>
           </h1>
           
           <p className="text-xl text-stone-200 mb-10 leading-relaxed max-w-2xl">
-            We provide daily meals to the elderly, the needy, and blue-collar workers who have been left behind. 
+            We provide daily, nutritious meals directly to the doorsteps of the disabled and elderly who are homebound and unable to work. 
             Zero overhead. 100% impact.
           </p>
           

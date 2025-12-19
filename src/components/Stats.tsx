@@ -13,7 +13,7 @@ const stats = [
   },
   {
     id: 2,
-    name: 'Families Supported',
+    name: 'Homebound Served',
     value: '150+',
     icon: Users,
     color: 'bg-blue-100 text-blue-600',

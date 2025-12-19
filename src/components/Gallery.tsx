@@ -11,7 +11,7 @@ const galleryItems = [
     type: 'image',
     src: '/assets/seva-1.jpg',
     alt: 'Food Distribution',
-    caption: 'Daily evening meal distribution'
+    caption: 'Daily evening meal delivery'
   },
   {
     id: 2,
@@ -32,14 +32,14 @@ const galleryItems = [
     type: 'image',
     src: '/assets/seva-4.jpg',
     alt: 'Community',
-    caption: 'Serving the elderly with respect'
+    caption: 'Serving the homebound with respect'
   },
   {
     id: 5,
     type: 'image',
     src: '/assets/seva-5.jpg',
     alt: 'Helping Hand',
-    caption: 'Volunteers in action'
+    caption: 'Volunteers delivering hope'
   },
   {
     id: 6,
