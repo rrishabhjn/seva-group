@@ -24,7 +24,7 @@ export function Hero() {
           className="max-w-3xl"
         >
           <div className="inline-block bg-orange-600/20 backdrop-blur-sm border border-orange-500/30 rounded-full px-4 py-1.5 mb-6">
-            <span className="text-orange-200 font-medium text-sm tracking-wide uppercase">Serving Beawar Since 2020</span>
+            <span className="text-orange-200 font-medium text-sm tracking-wide uppercase">Serving Beawar, India Since 2020</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">

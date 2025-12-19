@@ -23,7 +23,7 @@ export function Mission() {
             <div className="prose prose-lg text-stone-600 mb-8">
               <p className="mb-4">
                 The Seva Group initiative began in 2020 by <strong>Preeti Jain and her friends</strong>. 
-                What started as a response to the pandemic revealed a deeper, permanent need in our community.
+                What started as a response to the pandemic revealed a deeper, permanent need in our community in <strong>Beawar, Rajasthan</strong>.
               </p>
               <p>
                 We realized that many individuals are <strong>disabled, homebound, or too frail to work</strong>, leaving them without any means to feed themselves. 
@@ -35,7 +35,7 @@ export function Mission() {
               {[
                 "Local caterers provide food at-cost",
                 "100% of donations go directly to meals",
-                "Daily doorstep delivery in Beawar",
+                "Daily doorstep delivery in Beawar, India",
                 "Community-driven and volunteer-led"
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3">

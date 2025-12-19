@@ -29,7 +29,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-white">Visit Us</h4>
-                  <p className="text-stone-400">37 Bhajan Nagar, Ajmer Road,<br />Beawar, Rajasthan</p>
+                  <p className="text-stone-400">37 Bhajan Nagar, Ajmer Road,<br />Beawar, Rajasthan, India</p>
                 </div>
               </div>
 

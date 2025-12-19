@@ -12,7 +12,7 @@ export function Footer() {
         
         <div className="text-sm text-center md:text-right">
           <p>&copy; {new Date().getFullYear()} Seva Group. All rights reserved.</p>
-          <p className="mt-1">Designed with love for the community.</p>
+          <p className="mt-1">Serving the community of Beawar, Rajasthan, India.</p>
         </div>
       </div>
     </footer>
